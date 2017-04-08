@@ -7,7 +7,7 @@ const ProductSchema = Schema({
     name: String,
     picture: String,
     price: {type: Number,default: 0},
-    categeries: {type: String, enum: ['computers','phones','accesories']},
+    categories: {type: String, enum: ['computers','phones','accesories']},
     description : String
 })
 module.exports = mongoose.model('Product',ProductSchema)
